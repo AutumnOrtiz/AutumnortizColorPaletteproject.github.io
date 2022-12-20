@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+.ColorBox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.ColorBox:hover {
+    flex-grow: 4;
+}
+
+.ColorBox-ColorName {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 4em;
+    color: white;
+    text-shadow: 1px 1px 2px #2e2e2e;
+}
+
+.ColorBox-ColorName.dark-text {
+    color: #3b3b3b;
+    text-shadow: 1px 1px 2px #3b3b3b;
+}
+
+.ColorBox-ColorName:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .ColorBox {
+        width: 100%;
+        height: 15%;
+    }
+
+    .ColorBox-ColorName {
+        margin-bottom: 50%;
+        margin-top: 50%;
+        align-self: center;
+    }
+}
